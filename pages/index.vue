@@ -18,3 +18,20 @@ const { data: trainers } = await useTrainers();
     </GamifyList>
   </div>
 </template>
+
+<style scoped>
+div {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(pokemon.jpg);
+}
+h1 {
+  color: grey;
+}
+NuxtLink{
+  color: gray;
+}
+span{
+  color: gray;
+}
+</style>
