@@ -38,11 +38,12 @@ const { dialog, onOpen, onClose } = useDialog();
           @keydown.enter="valid && onOpen(true)"
         />
       </div>
-      <GamifyButton type="button" :disabled="!valid" @click="onOpen(true)"
+      <GamifyButton type="button" :disabled="!valid" @click="onOpen(true)"   
         >けってい</GamifyButton
       >
     </form>
     <GamifyDialog
+      style="background-color: bisque;"
       v-if="dialog"
       id="confirm-submit"
       title="かくにん"
@@ -66,8 +67,8 @@ form {
   border-radius: 0.5rem;
   border: solid 4px #555;
   padding: 1.5rem 3rem;
+  background-color: yellow;
 }
-
 form > :not(:last-child) {
   display: block;
   margin-bottom: 1rem;
@@ -81,4 +82,6 @@ form > :not(:last-child) {
 .item > span {
   font-size: 0.875rem;
 }
+
 </style>
+
